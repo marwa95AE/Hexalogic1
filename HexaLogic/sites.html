@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analog Sites - Mars Analog Sites - HexaLogic</title>
+<link rel="stylesheet" href="style.css">
+<script src="background.js" defer></script>
+<script src="app.js" defer></script>
+<script src="localization.js" defer></script>
+</head>
+<body>
+
+<header id="top">
+  <h1>Mars Analog Sites Interface</h1>
+  <p><strong>Team:</strong> HexaLogic </p>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><strong>Analog Sites</strong></li>
+      <li><a href="weather.html">Weather & Comparison</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
+</header>
+
+<hr>
+
+<section id="analogs">
+  <h2>Earth-Based Mars Analog Sites</h2>
+
+  <nav id="sites-index">
+    <h3>Sites Index</h3>
+    <ol>
+      <li><a href="#mcmurdo">McMurdo Station</a></li>
+      <li><a href="#atacama">Atacama Desert</a></li>
+      <li><a href="#haughton">Haughton Crater</a></li>
+    </ol>
+    <p><a href="#sites-compare">Quick comparison table</a></p>
+  </nav>
+
+  <h3 id="sites-compare">Quick Comparison Table</h3>
+  <table id="sites-compare-table" border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr><th>Site</th><th>Region</th><th>Mars Counterpart</th><th>Latitude</th><th>Longitude</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="#mcmurdo">McMurdo Station</a></td><td>Antarctica</td><td>Mars South Pole (Planum Australe)</td><td>-77.85</td><td>166.66</td></tr>
+      <tr><td><a href="#atacama">Atacama Desert</a></td><td>Chile, South America</td><td>Noctis Labyrinthus / Valles Marineris</td><td>-23.86</td><td>-69.13</td></tr>
+      <tr><td><a href="#haughton">Haughton Crater</a></td><td>Devon Island, High Arctic, Canada</td><td>Gale Crater (Mars Science Laboratory Landing Site)</td><td>75.37</td><td>-89.68</td></tr>
+    </tbody>
+  </table>
+
+  <article id="mcmurdo" class="site">
+    <h3>1. McMurdo Station</h3>
+    <p><strong>Region:</strong> Antarctica</p>
+    <p><strong>Mars counterpart:</strong> Mars South Pole (Planum Australe)</p>
+    <p><strong>Coordinates:</strong> latitude -77.85, longitude 166.66</p>
+    <p><strong>Selection rationale:</strong> Utilized for studying ancient ice remnants, extreme sub-zero survival engineering, and testing sub-glacial drilling robots analogous to the Martian polar ice sheets.</p>
+    <h4>Site Characteristics:</h4>
+    <table id="mcmurdo-traits" border="1" cellpadding="8" cellspacing="0">
+      <thead><tr><th>Trait</th><th>On Earth</th><th>Mars Comparison</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Soil & Regolith Composition</strong></td><td>Volcanic rocks and nutrient-poor mineral soils similar to Martian regolith.</td><td>High iron-oxide and silica content matching Gale Crater floor composition.</td></tr>
+        <tr><td><strong>Extreme Thermal Fluctuations</strong></td><td>Severe sub-zero temperatures with sharp diurnal and seasonal shifts.</td><td>Simulates equipment endurance under rapid Martian freezing cycles.</td></tr>
+        <tr><td><strong>Radiation & Atmospheric Filtering</strong></td><td>High polar exposure to UV radiation during seasonal shifts.</td><td>Tests solar radiation degradation on organic samples and electronics.</td></tr>
+        <tr><td><strong>Isolation & Crew Psychology</strong></td><td>Extreme geographical detachment and difficult emergency rescue access.</td><td>Evaluates crew autonomy and mental resilience during deep space missions.</td></tr>
+        <tr><td><strong>Aridity & Low Moisture</strong></td><td>Dry polar desert with locked ice reserves and zero surface vegetation.</td><td>Ideal for testing In-Situ Resource Utilization (ISRU) water extraction tools.</td></tr>
+      </tbody>
+    </table>
+    <h4>Photo Gallery:</h4>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23" alt="Frozen polar terrain" width="400">
+      <figcaption>Frozen polar terrain at McMurdo</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb" alt="South Pole environment" width="400">
+      <figcaption>Environment simulating the Martian south pole</figcaption>
+    </figure>
+    <p><a href="#sites-index">&uarr; Back to index</a></p>
+  </article>
+
+  <article id="atacama" class="site">
+    <h3>2. Atacama Desert</h3>
+    <p><strong>Region:</strong> Chile, South America</p>
+    <p><strong>Mars counterpart:</strong> Noctis Labyrinthus / Valles Marineris</p>
+    <p><strong>Coordinates:</strong> latitude -23.86, longitude -69.13</p>
+    <p><strong>Selection rationale:</strong> Due to extreme hyper-aridity and perchlorate-rich soils, it is the premier terrestrial laboratory for testing biosignature-detection instruments and robotic micro-life seekers.</p>
+    <h4>Site Characteristics:</h4>
+    <table id="atacama-traits" border="1" cellpadding="8" cellspacing="0">
+      <thead><tr><th>Trait</th><th>On Earth</th><th>Mars Comparison</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Soil & Regolith Composition</strong></td><td>Oxidized clay and perchlorate traces mirroring ancient Martian lakebeds.</td><td>High similarity to clay-rich sediments analyzed by Curiosity and Perseverance.</td></tr>
+        <tr><td><strong>Extreme Thermal Fluctuations</strong></td><td>Intense daytime sun heat contrasted with freezing nighttime drops.</td><td>Mirrors equatorial Mars temperature swings between day and night.</td></tr>
+        <tr><td><strong>Radiation & Atmospheric Filtering</strong></td><td>High altitude location providing minimal atmospheric cloud cover.</td><td>Used to test UV-resistant coatings for rover optics and solar panels.</td></tr>
+        <tr><td><strong>Isolation & Crew Psychology</strong></td><td>Vast barren landscapes simulating deep desert extravehicular activities (EVAs).</td><td>Tests long-range communication delays and rover navigation protocols.</td></tr>
+        <tr><td><strong>Aridity & Low Moisture</strong></td><td>One of the driest non-polar places on Earth with almost zero rainfall.</td><td>Directly models ancient Martian dry riverbeds and subsurface moisture traps.</td></tr>
+      </tbody>
+    </table>
+    <h4>Photo Gallery:</h4>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9" alt="Atacama Desert" width="400">
+      <figcaption>Dry red desert of Atacama</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" alt="Rocky terrain" width="400">
+      <figcaption>Rocky terrain resembling the Martian surface</figcaption>
+    </figure>
+    <p><a href="#sites-index">&uarr; Back to index</a></p>
+  </article>
+
+  <article id="haughton" class="site">
+    <h3>3. Haughton Crater</h3>
+    <p><strong>Region:</strong> Devon Island, High Arctic, Canada</p>
+    <p><strong>Mars counterpart:</strong> Gale Crater (Mars Science Laboratory Landing Site)</p>
+    <p><strong>Coordinates:</strong> latitude 75.37, longitude -89.68</p>
+    <p><strong>Selection rationale:</strong> An ancient impact crater formed in a polar desert environment ('Mars on Earth'), used for testing full space suits, heavy rovers, and geological field training.</p>
+    <h4>Site Characteristics:</h4>
+    <table id="haughton-traits" border="1" cellpadding="8" cellspacing="0">
+      <thead><tr><th>Trait</th><th>On Earth</th><th>Mars Comparison</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Soil & Regolith Composition</strong></td><td>Impact-breccia and fractured bedrock mirroring crater-impact physics.</td><td>Matches shocked quartz and impact ejecta found across Martian impact basins.</td></tr>
+        <tr><td><strong>Extreme Thermal Fluctuations</strong></td><td>Arctic wind chills and freezing permafrost layers year-round.</td><td>Tests thermal insulation efficiency of next-generation astronaut suits.</td></tr>
+        <tr><td><strong>Radiation & Atmospheric Filtering</strong></td><td>High latitude atmospheric dispersion patterns.</td><td>Validates radiation shielding materials for astronaut habitats.</td></tr>
+        <tr><td><strong>Isolation & Crew Psychology</strong></td><td>Completely remote Arctic island accessible only by specialized aircraft.</td><td>Fosters strict habitat operational discipline and emergency self-reliance.</td></tr>
+        <tr><td><strong>Aridity & Low Moisture</strong></td><td>Polar desert environment with dry permafrost and minimal liquid water.</td><td>Simulates drilling techniques into frozen Martian subsurface layers.</td></tr>
+      </tbody>
+    </table>
+    <h4>Photo Gallery:</h4>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa" alt="Haughton Crater" width="400">
+      <figcaption>Impact crater and polar terrain</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Devon Island" width="400">
+      <figcaption>Isolated setting on Devon Island</figcaption>
+    </figure>
+    <p><a href="#sites-index">&uarr; Back to index</a></p>
+  </article>
+</section>
+
+<hr>
+
+<p><small>&copy; 2026 HexaLogic - Mars Analog Sites Interface project proposal</small></p>
+
+</body>
+</html>

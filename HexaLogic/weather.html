@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather & Comparison - Mars Analog Sites - HexaLogic</title>
+<link rel="stylesheet" href="style.css">
+<script src="background.js" defer></script>
+<script src="app.js" defer></script>
+<script src="localization.js" defer></script>
+</head>
+<body>
+
+<header id="top">
+  <h1>Mars Analog Sites Interface</h1>
+  <p><strong>Team:</strong> HexaLogic </p>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sites.html">Analog Sites</a></li>
+      <li><strong>Weather & Comparison</strong></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
+</header>
+
+<hr>
+
+<section id="telemetry">
+  <h2>Current Weather vs. Mars</h2>
+  <p>Earth values are fetched from the Open-Meteo API (<code>https://api.open-meteo.com/v1/forecast</code>); Mars values are fixed, for comparison only.</p>
+  <p id="weather-status" class="loading" role="status" aria-live="polite">Waiting for weather data…</p>
+  <table id="weather-table" border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr><th>Location</th><th>Current Temperature</th><th>Humidity</th><th>Air Pressure</th><th>Avg. Earth Temperature (reference)</th><th>Mars Analog (approx. values)</th></tr>
+    </thead>
+    <tbody>
+      <tr id="weather-mcmurdo" data-lat="-77.85" data-lon="166.66">
+        <td><strong>McMurdo</strong></td>
+        <td id="mcmurdo-temp">--</td>
+        <td id="mcmurdo-humidity">--</td>
+        <td id="mcmurdo-pressure">--</td>
+        <td>-15&deg;C</td>
+        <td>-60&deg;C | 600 Pa | UV: Extreme</td>
+      </tr>
+      <tr id="weather-atacama" data-lat="-23.86" data-lon="-69.13">
+        <td><strong>Atacama</strong></td>
+        <td id="atacama-temp">--</td>
+        <td id="atacama-humidity">--</td>
+        <td id="atacama-pressure">--</td>
+        <td>22&deg;C</td>
+        <td>-40&deg;C | 700 Pa | UV: Very High</td>
+      </tr>
+      <tr id="weather-haughton" data-lat="75.37" data-lon="-89.68">
+        <td><strong>Haughton</strong></td>
+        <td id="haughton-temp">--</td>
+        <td id="haughton-humidity">--</td>
+        <td id="haughton-pressure">--</td>
+        <td>-12&deg;C</td>
+        <td>-55&deg;C | 650 Pa | UV: High</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<hr>
+
+<p><small>&copy; 2026 HexaLogic - Mars Analog Sites Interface project proposal</small></p>
+
+</body>
+</html>
